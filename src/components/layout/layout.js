@@ -3,25 +3,26 @@ import { Button, Navbar, NavDropdown } from "react-bootstrap";
 
 
 export function Layout() {
+    const domain = "https://minh-tuan-web.vercel.app";
     const navbarCollaps = [
         {
             title: "Nội dung chính",
-            href: "http://192.168.1.51:3000/"
+            href: domain
         },
         {
             title: "Nhân vật chính",
             subItem: [
                 {
                     title: "Serena van der Woodsen",
-                    href: "http://192.168.1.51:3000/nhan-vat-chinh/serena-van-der-woodsen"
+                    href: domain + "/nhan-vat-chinh/serena-van-der-woodsen"
                 },  
                 {
                     title: "Blair Waldorf",
-                    href: "http://192.168.1.51:3000/nhan-vat-chinh/blair-waldorf"
+                    href: domain + "/nhan-vat-chinh/blair-waldorf"
                 },
                 {
                     title: "Dan Humphrey",
-                    href: "http://192.168.1.51:3000/nhan-vat-chinh/dan-humphrey"
+                    href: domain + "/nhan-vat-chinh/dan-humphrey"
                 },
             ]
         },
@@ -30,15 +31,15 @@ export function Layout() {
             subItem: [
                 {
                     title: "Chuck Bass",
-                    href: "http://192.168.1.51:3000/nhan-vat-dang-chu-y/chuck-bass"
+                    href: domain + "/nhan-vat-dang-chu-y/chuck-bass"
                 },
                 {
                     title: "Nate Archibald",
-                    href: "http://192.168.1.51:3000/nhan-vat-dang-chu-y/nate-archibald"
+                    href: domain + "/nhan-vat-dang-chu-y/nate-archibald"
                 },
                 {
                     title: "Jenny Humphrey",
-                    href: "http://192.168.1.51:3000/nhan-vat-dang-chu-y/jenny-humphrey"
+                    href: domain + "/nhan-vat-dang-chu-y/jenny-humphrey"
                 },
             ]
         }
