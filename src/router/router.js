@@ -1,18 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from "../components/layout/index.js";
-import { Information } from "../modules/information/index.js";
+import { Layout } from "../components/layout/layout.js";
 import { Menu } from "../modules/menu/index.js";
-import { Exam } from "../modules/exam/index.js";
-import { Introduction } from "../modules/introduction/index.js";
-import { CoCau } from "../modules/introduction/co-cau.js";
-import { GioiThieuChung } from "../modules/introduction/gioi-thieu-chung.js";
-import { PhongTruyenThong } from "../modules/introduction/phong-truyen-thong.js";
-import { Lop10 } from "../modules/exam/lop10.js";
-import { Lop11 } from "../modules/exam/lop11.js";
-import { Lop12 } from "../modules/exam/lop12.js";
-import { DanhChoGiaoVien } from "../modules/information/danh-cho-giao-vien.js";
-import { DanhChoHocSinh } from "../modules/information/danh-cho-hoc-sinh.js";
-import { DanhChoPhuHuynh } from "../modules/information/danh-cho-phu-huynh.js";
+import { Serena } from "../modules/nhan-vat-chinh/serena.js";
+import { Blair } from "../modules/nhan-vat-chinh/blair.js";
+import { NhanVatChinh } from "../modules/nhan-vat-chinh/index.js";
+import { Dan } from "../modules/nhan-vat-chinh/dan.js";
+import { NhanVatDangChuY } from "../modules/nhan-vat-dang-chu-y/index.js";
+import { Chuck } from "../modules/nhan-vat-dang-chu-y/chuck.js";
+import { Jenny } from "../modules/nhan-vat-dang-chu-y/jenny.js";
+import { Nate } from "../modules/nhan-vat-dang-chu-y/nate.js";
 
 export const routers = createBrowserRouter([
     {
@@ -24,68 +20,47 @@ export const routers = createBrowserRouter([
                 element: <Menu></Menu>
             },
             {
-                path: '/information',
+                path: '/nhan-vat-chinh',
                 children: [
                     {
-                        index: true,
-                        element: <Information></Information>
+                        index: true, 
+                        element: <NhanVatChinh></NhanVatChinh>
                     },
                     {
-                        path: 'danh-cho-hoc-sinh',
-                        element: <DanhChoHocSinh></DanhChoHocSinh>
+                        path: 'blair-waldorf',
+                        element: <Blair></Blair>
                     },
                     {
-                        path: 'danh-cho-phu-huynh',
-                        element: <DanhChoPhuHuynh></DanhChoPhuHuynh>
+                        path: 'serena-van-der-woodsen',
+                        element: <Serena></Serena>
                     },
                     {
-                        path: 'danh-cho-giao-vien',
-                        element: <DanhChoGiaoVien></DanhChoGiaoVien>
+                        path: 'dan-humphrey',
+                        element: <Dan></Dan>
                     }
                 ]
             },
             {
-                path: '/introduction',
+                path: '/nhan-vat-dang-chu-y',
                 children: [
                     {
                         index: true,
-                        element: <Introduction></Introduction>
+                        element: <NhanVatDangChuY></NhanVatDangChuY>
                     },
                     {
-                        path: 'co-cau',
-                        element: <CoCau></CoCau>
+                        path: 'chuck-bass',
+                        element: <Chuck></Chuck>
                     },
                     {
-                        path: 'gioi-thieu-chung',
-                        element: <GioiThieuChung></GioiThieuChung>
+                        path: 'nate-archibald',
+                        element: <Nate></Nate>
                     },
                     {
-                        path: 'phong-truyen-thong',
-                        element: <PhongTruyenThong></PhongTruyenThong>
+                        path: 'jenny-humphrey',
+                        element: <Jenny></Jenny>
                     }
                 ]
             },
-            {
-                path: '/exam',
-                children: [
-                    {
-                        index: true,
-                        element: <Exam />
-                    },
-                    {
-                        path: 'lop10',
-                        element: <Lop10></Lop10>
-                    },
-                    {
-                        path: 'lop11',
-                        element: <Lop11></Lop11>
-                    },
-                    {
-                        path: 'lop12',
-                        element: <Lop12></Lop12>
-                    },
-                ]
-            }
         ]
     }
 ])

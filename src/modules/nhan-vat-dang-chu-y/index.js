@@ -1,5 +1,5 @@
 
-export const Introduction = () => {
+export const NhanVatDangChuY = () => {
     return(
         <>
             <p>Giới thiệu</p>
