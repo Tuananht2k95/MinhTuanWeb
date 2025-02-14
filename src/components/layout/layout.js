@@ -47,8 +47,8 @@ export function Layout() {
 
     return(
         <>
-            <Navbar className="fixed-top bg-light" >
-                <Navbar.Brand href="/" className="col-2">
+            <Navbar className="fixed-top bg-light col-11" style={{left: '50%', transform: 'translateX(-50%)'}}>
+                <Navbar.Brand href="/" className="col-3 ms-4">
                     Gossip Girl Fandom
                 </Navbar.Brand>
                 <Navbar.Collapse className="justify-content-end">
@@ -57,7 +57,7 @@ export function Layout() {
                             (item) => {
                                 if (item.subItem) {
                                     return(
-                                        <NavDropdown title={item.title} className="btn btn-primary col-3">
+                                        <NavDropdown title={item.title} className="btn btn-primary col-3 m-2">
                                             {
                                                 item.subItem.map(
                                                     (subItem) => {
@@ -68,14 +68,14 @@ export function Layout() {
                                         </NavDropdown>           
                                     )
                                 } else {
-                                    return <Button href={item.href} className="col-3">{item.title}</Button>
+                                    return <Button href={item.href} className="col-3 m-2">{item.title}</Button>
                                 }
                             }
                         )                   
                     }
                 </Navbar.Collapse>
             </Navbar>
-            <Outlet />
+            <Outlet/>
         </>
         
     );
