@@ -2,6 +2,7 @@ nav {
   height: 4.6875rem;
   .btn {
     height: 2.5rem;
+    width: fit-content;
   }
 }
 
@@ -12,4 +13,6 @@ nav {
 
 p {
   text-align: justify;
+  font-size: 1.25rem;
 }
+

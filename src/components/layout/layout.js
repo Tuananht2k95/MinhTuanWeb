@@ -47,8 +47,8 @@ export function Layout() {
 
     return(
         <>
-            <Navbar className="fixed-top bg-light col-11" style={{left: '50%', transform: 'translateX(-50%)'}}>
-                <Navbar.Brand href="/" className="col-3 ms-4">
+            <Navbar className="fixed-top bg-dark col-12" style={{left: '50%', transform: 'translateX(-50%)'}}>
+                <Navbar.Brand href="/" className="col-3 ms-4 link-light">
                     Gossip Girl Fandom
                 </Navbar.Brand>
                 <Navbar.Collapse className="justify-content-end">
